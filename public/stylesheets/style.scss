@@ -1,0 +1,20 @@
+$text-color : #00B7FF;
+$color-bg : rgba(22, 109, 141, 0.77);
+$color-p : #e55819;
+
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: $color-bg;
+}
+
+p.subtitle {
+    color: $color-p;
+    font-size: 24px;
+    text-align: center;
+}
+
+a {
+    color: $text-color;
+    text-align: center;
+}

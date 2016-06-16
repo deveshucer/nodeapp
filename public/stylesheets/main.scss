@@ -1,0 +1,11 @@
+//variables
+$bg-color: rgba(5, 116, 131, 0.67);
+$txt-color: rgba(29, 33, 149, 0.95);
+$title-color:rgba( 118, 6, 167, 0.939 );
+$font-family: helvetica;
+
+//css
+body{
+    color: $txt-color;
+    background-color: $bg-color;
+}

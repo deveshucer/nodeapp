@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    header.header
+      h1= title
+    p.subtitle Welcome to #{title}
+    div.outer-container
+      div.inner-container
+        -var list = ['Devesh', 'Ramesh', 'Suresh', 'Devesh', 'Ramesh']
+        h1.users LIST OF USERS
+        div.list-of-users
+        for user in list
+            li= user
+      
