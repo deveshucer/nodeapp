@@ -3,7 +3,6 @@ var router = express.Router();
 
 /* GET users listing. */
 
-
 // Retrieve
 // var MongoClient = require('mongodb').MongoClient;
 
@@ -24,7 +23,7 @@ var url = 'mongodb://localhost:27017/nodeapp';
 var users = [];
 
 var findUsers = function(db, callback) {
-   var cursor =db.collection('users').find( );
+   var cursor =db.collection('users').find();
    cursor.each(function(err, doc) {
       assert.equal(err, null);
       if (doc != null) {
@@ -43,9 +42,12 @@ MongoClient.connect(url, function(err, db) {
   });
 });
 
-
 router.get('/', function(req, res, next) {
-  res.send(JSON.stringify(users));
+  res.send(users);
 });
+
+// router.get('/', function(req, res, next) {
+//   res.render('users',{users: users, title: 'Users list'});
+// });
 
 module.exports = router;
